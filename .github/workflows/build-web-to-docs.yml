@@ -55,10 +55,6 @@ jobs:
             echo "Prebuilt Godot exists, skipping build."
           fi
 
-      # 6. Build Documentation
-      - name: Build Documentation
-        run: make html
-
       # 7. Deploy to GitHub Pages
       - name: Deploy Docs
         uses: peaceiris/actions-gh-pages@v3
