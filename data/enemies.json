@@ -1,0 +1,12 @@
+[
+  {
+	"name": "Slime",
+	"hp": 30,
+	"attack": 6
+  },
+  {
+	"name": "Goblin",
+	"hp": 40,
+	"attack": 8
+  }
+]

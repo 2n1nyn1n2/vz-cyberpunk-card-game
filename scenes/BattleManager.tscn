@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://d34i1tgv1jvjk"]
+
+[ext_resource type="Script" uid="uid://cid1elacle8a2" path="res://scripts/BattleManager.gd" id="1"]
+[ext_resource type="Script" uid="uid://cu5axvsqqm8t6" path="res://scripts/Card.gd" id="2_bdt7j"]
+[ext_resource type="PackedScene" uid="uid://dk20p1s22c3xg" path="res://scenes/Enemy.tscn" id="2_ioovj"]
+[ext_resource type="PackedScene" uid="uid://b8uge61ervxci" path="res://scenes/Player.tscn" id="5_qaf7h"]
+
+[node name="BattleManager" type="Node"]
+script = ExtResource("1")
+
+[node name="Enemy" parent="." instance=ExtResource("2_ioovj")]
+position = Vector2(455, 204)
+
+[node name="Player" parent="." instance=ExtResource("5_qaf7h")]
+position = Vector2(155, 259)
+
+[node name="EnergyLabel" type="Label" parent="."]
+offset_left = 20.0
+offset_top = 20.0
+text = "Energy: 3/3"
+
+[node name="EndTurnButton" type="Button" parent="."]
+offset_left = 5.0
+offset_top = 56.0
+offset_right = 155.0
+offset_bottom = 106.0
+text = "End Turn"
+
+[node name="Hand" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 13.335007
+offset_top = 368.87158
+offset_right = 13.335007
+offset_bottom = 368.87158
+script = ExtResource("2_bdt7j")

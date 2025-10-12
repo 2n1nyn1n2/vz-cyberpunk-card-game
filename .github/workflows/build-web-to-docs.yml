@@ -1,0 +1,88 @@
+name: Build Web Docs
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Checkout the repo
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2. Setup Python
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      # 3. Cache Python dependencies
+      - name: Cache Python dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      # 4. Install Python dependencies
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      # 5. Detect Godot source changes
+      - name: Check for Godot source changes
+        id: godot_changes
+        run: |
+          git fetch origin main
+          # Check for changes in SConstruct, modules/, or core engine files
+          if git diff --name-only origin/main...HEAD | grep -E 'SConstruct|modules/|core/|servers/'; then
+            echo "godot_changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "godot_changed=false" >> $GITHUB_OUTPUT
+          fi
+
+      # 6. Cache Godot build artifacts
+      - name: Cache Godot build
+        uses: actions/cache@v3
+        with:
+          path: |
+            .scons
+            bin/
+          key: godot-build-${{ hashFiles('**/SConstruct') }}
+
+      # 7. Download prebuilt Godot if there are changes
+      - name: Download Godot prebuilt
+        if: steps.godot_changes.outputs.godot_changed == 'true'
+        run: |
+          mkdir -p ./bin
+          curl -L -o godot.zip https://github.com/godotengine/godot/releases/download/4.3.2/Godot_v4.3.2-stable_linux.headless.64.zip
+          unzip -o godot.zip -d ./bin || echo "Download failed, will build from source"
+
+      # 8. Build Godot from source if needed
+      - name: Build Godot from source
+        if: steps.godot_changes.outputs.godot_changed == 'true' && !exists('./bin/Godot_v4.3.2-stable_linux.headless.64')
+        run: |
+          scons -j$(nproc) platform=web tools=no target=release_debug
+
+      # 9. Build Web Project
+      - name: Build Web Project
+        run: |
+          npm ci
+          npm run build
+
+      # 10. Build Documentation
+      - name: Build Documentation
+        run: make html
+
+      # 11. Deploy to GitHub Pages
+      - name: Deploy Docs
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
