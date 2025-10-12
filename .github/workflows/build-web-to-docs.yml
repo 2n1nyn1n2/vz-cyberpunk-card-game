@@ -16,26 +16,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # 2. Setup Python
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: "3.x"
-
-      # 3. Cache Python dependencies
-      - name: Cache Python dependencies
-        uses: actions/cache@v3
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-
-      # 4. Install Python dependencies
-      - name: Install Python dependencies
-        run: pip install -r requirements.txt
-
-      # 5. Detect Godot source changes
+      # 2. Detect Godot source changes
       - name: Check for Godot source changes
         id: godot_changes
         run: |
@@ -46,7 +27,7 @@ jobs:
             echo "godot_changed=false" >> $GITHUB_OUTPUT
           fi
 
-      # 6. Cache Godot build artifacts
+      # 3. Cache Godot build artifacts
       - name: Cache Godot build
         uses: actions/cache@v3
         with:
@@ -55,7 +36,7 @@ jobs:
             bin/
           key: godot-build-${{ hashFiles('**/SConstruct') }}
 
-      # 7. Download prebuilt Godot if there are changes
+      # 4. Download prebuilt Godot if there are changes
       - name: Download Godot prebuilt
         if: steps.godot_changes.outputs.godot_changed == 'true'
         run: |
@@ -63,7 +44,7 @@ jobs:
           curl -L -o godot.zip https://github.com/godotengine/godot/releases/download/4.3.2/Godot_v4.3.2-stable_linux.headless.64.zip
           unzip -o godot.zip -d ./bin || echo "Download failed, will build from source"
 
-      # 8. Build Godot from source if needed
+      # 5. Build Godot from source if needed
       - name: Build Godot from source
         if: steps.godot_changes.outputs.godot_changed == 'true'
         run: |
@@ -74,17 +55,17 @@ jobs:
             echo "Prebuilt Godot exists, skipping build."
           fi
 
-      # 9. Build Web Project
+      # 6. Build Web Project
       - name: Build Web Project
         run: |
           npm ci
           npm run build
 
-      # 10. Build Documentation
+      # 7. Build Documentation
       - name: Build Documentation
         run: make html
 
-      # 11. Deploy to GitHub Pages
+      # 8. Deploy to GitHub Pages
       - name: Deploy Docs
         uses: peaceiris/actions-gh-pages@v3
         with:
