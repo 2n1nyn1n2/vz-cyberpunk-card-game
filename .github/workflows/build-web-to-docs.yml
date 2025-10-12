@@ -40,7 +40,6 @@ jobs:
         id: godot_changes
         run: |
           git fetch origin main
-          # Check for changes in SConstruct, modules/, or core engine files
           if git diff --name-only origin/main...HEAD | grep -E 'SConstruct|modules/|core/|servers/'; then
             echo "godot_changed=true" >> $GITHUB_OUTPUT
           else
@@ -66,9 +65,14 @@ jobs:
 
       # 8. Build Godot from source if needed
       - name: Build Godot from source
-        if: steps.godot_changes.outputs.godot_changed == 'true' && !exists('./bin/Godot_v4.3.2-stable_linux.headless.64')
+        if: steps.godot_changes.outputs.godot_changed == 'true'
         run: |
-          scons -j$(nproc) platform=web tools=no target=release_debug
+          if [ ! -f ./bin/Godot_v4.3.2-stable_linux.headless.64 ]; then
+            echo "Prebuilt Godot not found, building from source..."
+            scons -j$(nproc) platform=web tools=no target=release_debug
+          else
+            echo "Prebuilt Godot exists, skipping build."
+          fi
 
       # 9. Build Web Project
       - name: Build Web Project
@@ -86,3 +90,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
+          clean: true
