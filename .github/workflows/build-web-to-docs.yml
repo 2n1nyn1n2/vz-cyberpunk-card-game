@@ -55,17 +55,11 @@ jobs:
             echo "Prebuilt Godot exists, skipping build."
           fi
 
-      # 6. Build Web Project
-      - name: Build Web Project
-        run: |
-          npm ci
-          npm run build
-
-      # 7. Build Documentation
+      # 6. Build Documentation
       - name: Build Documentation
         run: make html
 
-      # 8. Deploy to GitHub Pages
+      # 7. Deploy to GitHub Pages
       - name: Deploy Docs
         uses: peaceiris/actions-gh-pages@v3
         with:
