@@ -1,0 +1,118 @@
+{
+	"id":0,
+	"name":"The Overworked Crew Quarters",
+	"description": "The sleeping quarters for miners are infested with fatigue-inducing fumes
+from poor ventilation. Resting here restores energy but requires fixing the issue. A foreman
+could organize repairs, or trading rocks might buy better air filters.",
+	"choices": [
+		{
+			"id":1,
+			"name": "Pay for ventilation upgrades",
+			"requirements": [
+			],
+			"costs": [
+				{
+					"possession":"money",
+					"count":12
+				}
+			],
+			"rewards": [
+				{
+					"possession":"green jasper rock",
+					"description":"from grateful workers",
+					"count":1
+				}
+			]
+		},
+		{
+			"id":2,
+			"name": "Pay for ventilation upgrades - day shift",
+			"requirements": [
+				{
+					"possession":"day shift",
+					"count":1
+				}
+			],
+			"costs": [
+				{
+					"possession":"money",
+					"count":10
+				}
+			],
+			"rewards": [
+				{
+					"possession":"green jasper rock",
+					"description":"from grateful workers",
+					"count":1
+				}
+			]
+		},
+		{
+			"id":3,
+			"name": "Trade red jasper for air purifiers",
+			"requirements": [
+			],
+			"costs": [
+				{
+					"possession":"red jasper",
+					"count":1
+				}
+			],
+			"rewards": [
+				{
+					"possession":"hours of bonus energy",
+					"description":"Clear quarters",
+					"count":2
+				}
+			]
+		},
+		{
+			"id":4,
+			"name": "Assign foreman to lead cleanup",
+			"requirements": [
+				{
+					"possession":"foreman",
+					"count":1
+				}
+			],
+			"costs": [
+			],
+			"rewards": [
+				{
+					"possession":"money",
+					"description":"Upgraded quarters, crew productivity boost",
+					"count":8
+				}
+			]
+		},
+		{
+			"id":5,
+			"name": "Use pickaxe to vent the fumes manually",
+			"requirements": [
+				{
+					"possession":"pickaxe",
+					"count":1
+				}
+			],
+			"costs": [
+			],
+			"rewards": [
+				{
+					"possession":"raw meat",
+					"description":"scavenged supplies",
+					"count":1
+				}
+			]
+		},
+		{
+			"id":5,
+			"name": "Sleep elsewhere",
+			"requirements": [
+			],
+			"costs": [
+			],
+			"rewards": [
+			]
+		}
+	]
+}

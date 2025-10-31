@@ -1,0 +1,62 @@
+[
+	{
+		"name": "fuel",
+		"texture": "res://assets/possessions/fuel.jpg",
+		"active":true
+	},
+	{
+		"name": "money",
+		"texture": "res://assets/possessions/money.jpg",
+		"active":true
+	},
+	{
+		"active": true,
+		"name": "day shift",
+		"texture": "res://assets/possessions/day_shift.jpg"
+	},
+	{
+		"active": true,
+		"name": "flashlight",
+		"texture": "res://assets/possessions/flashlight.jpg"
+	},
+	{
+		"active": true,
+		"name": "foreman",
+		"texture": "res://assets/possessions/foreman.jpg"
+	},
+	{
+		"active": true,
+		"name": "night shift",
+		"texture": "res://assets/possessions/night_shift.jpg"
+	},
+	{
+		"active": true,
+		"name": "pickaxe",
+		"texture": "res://assets/possessions/pickaxe.jpg"
+	},
+	{
+		"active": true,
+		"name": "raw meat",
+		"texture": "res://assets/possessions/raw_meat.jpg"
+	},
+	{
+		"active": true,
+		"name": "red jasper",
+		"texture": "res://assets/possessions/red_jasper.jpg"
+	},
+	{
+		"active": true,
+		"name": "barracks",
+		"texture": "res://assets/possessions/sleeping_quarters.jpg"
+	},
+	{
+		"active": true,
+		"name": "spatula",
+		"texture": "res://assets/possessions/spatula.jpg"
+	},
+	{
+		"active": true,
+		"name": "yeast",
+		"texture": "res://assets/possessions/yeast.jpg"
+	}
+]

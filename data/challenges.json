@@ -1,0 +1,41 @@
+[
+  {
+	"name": "bug_car",
+	"texture": "res://assets/challenges/bug_car.png",
+	"active":false
+  },
+  {
+	"name": "bus_crash",
+	"texture": "res://assets/challenges/bus_crash.png",
+	"active":false
+  },
+  {
+	"name": "corrupt_guard",
+	"texture": "res://assets/challenges/corrupt_guard.jpg",
+	"active":false
+  },
+  {
+	"name": "abandoned_mine_shaft",
+	"texture": "res://assets/challenges/abandoned_mine_shaft.png",
+	"json":"res://data/challenges/abandoned_mine_shaft.json",
+	"active":true
+  },
+  {
+	"name": "fermentation_fiasco",
+	"texture": "res://assets/challenges/fermentation_fiasco.png",
+	"json":"res://data/challenges/fermentation_fiasco.json",
+	"active":true
+  },
+  {
+	"name": "midnight_bakery_dilemma",
+	"texture": "res://assets/challenges/midnight_bakery_dilemma.png",
+	"json":"res://data/challenges/midnight_bakery_dilemma.json",
+	"active":true
+  },
+  {
+	"name": "overworked_crew_quarters",
+	"texture": "res://assets/challenges/overworked_crew_quarters.png",
+	"json":"res://data/challenges/overworked_crew_quarters.json",
+	"active":true
+  }
+]

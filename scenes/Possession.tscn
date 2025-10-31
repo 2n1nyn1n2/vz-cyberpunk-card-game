@@ -1,0 +1,68 @@
+[gd_scene load_steps=8 format=3 uid="uid://bb8t675v2xqev"]
+
+[ext_resource type="Script" uid="uid://bni5kl5xin705" path="res://scripts/Possession.gd" id="1_q5b0n"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q5b0n"]
+bg_color = Color(1, 1, 1, 0.5019608)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3g5is"]
+
+[sub_resource type="SystemFont" id="SystemFont_q5b0n"]
+subpixel_positioning = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_2mdnw"]
+font = SubResource("SystemFont_q5b0n")
+
+[sub_resource type="SystemFont" id="SystemFont_8awgg"]
+subpixel_positioning = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_vbjie"]
+font = SubResource("SystemFont_8awgg")
+
+[node name="Possession" type="Control"]
+custom_minimum_size = Vector2(96, 128)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_q5b0n")
+
+[node name="Background" type="Panel" parent="."]
+custom_minimum_size = Vector2(96, 128)
+layout_mode = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_q5b0n")
+
+[node name="PossessionImage" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 0
+offset_left = 17.0
+offset_top = 4.0
+offset_right = 77.0
+offset_bottom = 84.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = SubResource("CompressedTexture2D_3g5is")
+stretch_mode = 2
+
+[node name="PossessionName" type="Label" parent="."]
+layout_mode = 0
+offset_top = 84.0
+offset_right = 96.0
+offset_bottom = 107.0
+text = "Card Name"
+label_settings = SubResource("LabelSettings_2mdnw")
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="PossessionCount" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 104.0
+offset_right = 97.0
+offset_bottom = 127.0
+text = "Count"
+label_settings = SubResource("LabelSettings_vbjie")
+horizontal_alignment = 1

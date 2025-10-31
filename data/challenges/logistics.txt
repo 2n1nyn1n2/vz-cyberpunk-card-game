@@ -1,0 +1,24 @@
+### Logistics for Overcoming Challenges
+To integrate these into the game loop:
+-
+**Resource Tracking:** Players start with a backpack holding 3-5 possessions (e.g.,
+choose 3 from: pickaxe, red jasper, flashlight, foreman, etc.). Resources like money ($20
+start), rocks (1 of each color initially), and perishables (raw meat, yeast decay over turns) are
+managed via a simple inventory UI.
+-
+**Enabler Mechanics:** Possessions act as "keys"
+—e.g., holding a pickaxe unlocks mining
+choices globally, but durability wears (recharge at sleeping quarters for $2). Always-enabled
+choices encourage risk/reward without items.
+-
+**Progression:** Completing challenges unlocks new areas (e.g., mine shaft leads to
+deeper caves with rare rocks). Failed/risky choices (like ignoring) build "fatigue" debuff,
+reducing future choice efficiency by 20% until rested.
+-
+**Balancing:** Money is versatile but finite (earned via trades); rocks are specific (red
+jasper for trades, blue for crafting). Possessions synergize—e.g., foreman + day shift halves
+labor costs across challenges.
+-
+**Replayability:** Randomize elements (e.g., ship encounter might need yellow jasper
+instead). Priest/fighter example ties in: Role-based possessions (prayers vs. sword) alter
+choice pools—e.g., priest gets "bless debris" for free clearance.

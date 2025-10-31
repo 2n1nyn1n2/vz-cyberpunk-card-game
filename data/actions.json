@@ -1,0 +1,22 @@
+[
+  {
+	"name": "join_the_group_001",
+	"texture": "res://assets/actions/join_the_group_001.jpg",
+	"active":true
+  },
+  {
+	"name": "join_the_group_002",
+	"texture": "res://assets/actions/join_the_group_002.jpg",
+	"active":true
+  },
+  {
+	"name": "join_the_group_003",
+	"texture": "res://assets/actions/join_the_group_003.jpg",
+	"active":true
+  },
+  {
+	"name": "join_the_group_004",
+	"texture": "res://assets/actions/join_the_group_004.jpg",
+	"active":true
+  }
+]

@@ -1,0 +1,127 @@
+{
+	"id":2,
+	"name":"The Midnight Bakery Dilemma",
+	"description": "A village bakery is overrun by nocturnal pests during the night shift, ruining
+dough batches. You need yeast to restart production, but the pests guard the storage. A
+flashlight could illuminate and scare them, or raw meat could bait a trap.",
+	"choices": [
+		{
+			"id":1,
+			"name": "Offer $7 for fresh yeast from a rival baker",
+			"requirements": [
+			],
+			"costs": [
+				{
+					"possession":"money",
+					"count":7
+				}
+			],
+			"rewards": [
+				{
+					"possession":"yeast",
+					"count":2
+				}
+			]
+		},
+		{
+			"id":2,
+			"name": "Offer $7 for fresh yeast from a rival baker (with spatula)",
+			"requirements": [
+				{
+					"possession":"spatula",
+					"count":1
+				}
+			],
+			"costs": [
+				{
+					"possession":"money",
+					"count":3.50
+				}
+			],
+			"rewards": [
+				{
+					"possession":"yeast",
+					"count":2
+				}
+			]
+		},
+		{
+			"id":3,
+			"name": "Set a meat trap for pests",
+			"requirements": [
+			],
+			"costs": [
+				{
+					"possession":"raw meat",
+					"count":1
+				}
+			],
+			"rewards": [
+				{
+					"possession":"yeast",
+					"count":1
+				},
+				{
+					"possession":"money",
+					"description":"from pest pelts",
+					"count":2
+				}
+			]
+		},
+		{
+			"id":4,
+			"name": "Illuminate with flashlight to drive them out",
+			"requirements": [
+				{
+					"possession":"flashlight",
+					"count":1
+				}
+			],
+			"costs": [
+			],
+			"rewards": [
+				{
+					"possession":"yeast",
+					"count":3
+				}
+			]
+		},
+		{
+			"id":5,
+			"name": "Work the night shift yourself",
+			"requirements": [
+				{
+					"possession":"night shift",
+					"count":1
+				}
+			],
+			"costs": [
+			],
+			"rewards": [
+				{
+					"possession":"money",
+					"description":"restored bakery and sold baked goods",
+					"count":10
+				}
+			]
+		},
+		{
+			"id":6,
+			"name": "Steal yeast under cover of dark",
+			"requirements": [
+			],
+			"costs": [
+				{
+					"possession":"money",
+					"count":5
+				}
+			],
+			"rewards": [
+				{
+					"possession":"yeast",
+					"count":1
+				}
+			]
+		}
+	]
+}

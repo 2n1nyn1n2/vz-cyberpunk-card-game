@@ -1,0 +1,82 @@
+[
+  {
+	"name": "the_chef",
+	"description": "Cooks for the mine.",
+	"goal":"Find a spatula, Find yeast, Poison the foreman",
+	"texture": "res://assets/players/the_chef.jpg",
+	"active":true,
+	"starting_actions":[],
+	"starting_possessions":[],
+	"desired_possessions":["spatula","yeast","foreman"]
+  },
+  {
+	"name": "the_miner",
+	"description": "Digs a tunnel under the fence to escape",
+	"goal":"Find a pickaxe, Find a flashlight, Find time to dig",
+	"texture": "res://assets/players/the_miner.jpg",
+	"active":true,
+	"starting_actions":[],
+	"starting_possessions":[],
+	"desired_possessions":["pickaxe","flashlight","night shift"]
+  },
+  {
+	"name": "the_minor",
+	"description": "Went out through the jungle with his tiger, found his father is a mayor",
+	"goal":"Train the tiger, Feed the tiger, Convince the boss to keep the tiger",
+	"texture": "res://assets/players/the_minor.jpg",
+	"active":true,
+	"starting_actions":[],
+	"starting_possessions":[],
+	"desired_possessions":["night shift","raw meat","foreman"]
+  },
+  {
+	"name": "the_monkey_twins_001",
+	"description": "Escapes because the foreman thinks there is only one monkey girl",
+	"goal":"Find the foreman, convince the foreman you are sleeping, escape",
+	"texture": "res://assets/players/the_monkey_twins_001.jpg",
+	"active":true,
+	"starting_actions":[],
+	"starting_possessions":[],
+	"desired_possessions":["foreman","barracks","night shift"]
+  },
+  {
+	"name": "the_monkey_twins_002",
+	"description": "Stays behind because the foreman thinks there is only one monkey girl",
+	"goal":"Find the foreman, convince the foreman you are sleeping, stay",
+	"texture": "res://assets/players/the_monkey_twins_002.jpg",
+	"active":true,
+	"starting_actions":[],
+	"starting_possessions":[],
+	"desired_possessions":["foreman","barracks","day shift"]
+  },
+  {
+	"name": "the_superstitious",
+	"description": "Manipulates the mind of a foreman to escape",
+	"goal":"Find red jasper, Find the foreman, Convince the foreman she is bad luck",
+	"texture": "res://assets/players/the_superstitious.jpg",
+	"active":true,
+	"starting_actions":[],
+	"starting_possessions":[],
+	"desired_possessions":["red jasper","foreman","day shift"]
+  },
+  {
+	"name": "african_man",
+	"texture": "res://assets/players/african_man.png",
+	"active":false
+  },
+  {
+	"name": "african_woman",
+	"texture": "res://assets/players/african_woman.png",
+	"active":false
+  },
+  {
+	"name": "caucasian_man",
+	"texture": "res://assets/players/caucasian_man.png",
+	"active":false
+  },
+  {
+	"name": "caucasian_woman",
+	"texture": "res://assets/players/caucasian_woman.png",
+	"active":false
+  }
+]

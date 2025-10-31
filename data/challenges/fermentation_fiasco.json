@@ -1,0 +1,118 @@
+{
+	"id":0,
+	"name":"The Fermentation Fiasco",
+	"description": "A brewer's vat has stalled fermentation due to contaminated water, halting 
+production of vital rations. Yeast is key to kickstarting it, but sourcing clean inputs is tricky.
+Spatula could stir and aerate, or flashlight reveal hidden contaminants.",
+	"choices": [
+		{
+			"id":1,
+			"name": "Buy purified water",
+			"requirements": [
+			],
+			"costs": [
+				{
+					"possession":"money",
+					"description":"",
+					"count":6
+				}
+			],
+			"rewards": [
+				{
+					"possession":"money",
+					"description":"Restart vat; gain 1 ration pack which you sell.",
+					"count":4
+				}
+			]
+		},
+		{
+			"id":2,
+			"name": "Trade raw meat for purified water",
+			"requirements": [
+			],
+			"costs": [
+				{
+					"possession":"raw meat",
+					"description":"",
+					"count":1
+				}
+			],
+			"rewards": [
+				{
+					"possession":"money",
+					"description":"Restart vat; gain 1 ration pack which you sell.",
+					"count":4
+				}
+			]
+		},
+		{
+			"id":3,
+			"name": "Add extra yeast to overpower contamination",
+			"requirements": [
+			],
+			"costs": [
+				{
+					"possession":"yeast",
+					"description":"",
+					"count":1
+				}
+			],
+			"rewards": [
+				{
+					"possession":"blue jasper",
+					"description":"Double rations; gain 1 blue jasper from brewer's thanks.",
+					"count":1
+				}
+			]
+		},
+		{
+			"id":4,
+			"name": "Stir with spatula to aerate",
+			"requirements": [
+				{
+					"possession":"spatula",
+					"count":1
+				}
+			],
+			"costs": [
+			],
+			"rewards": [
+				{
+					"possession":"money",
+					"description":"Clean fermentation; gain brew sales",
+					"count":9
+				}
+			]
+		},
+		{
+			"id":5,
+			"name": "Scan with flashlight for impurities",
+			"requirements": [
+				{
+					"possession":"flashlight",
+					"description":"",
+					"count":1
+				}
+			],
+			"costs": [
+			],
+			"rewards": [
+				{
+					"possession":"yeast",
+					"description":"Remove source of impurities",
+					"count":2
+				}
+			]
+		},
+		{
+			"id":6,
+			"name": "Abandon the vat",
+			"requirements": [
+			],
+			"costs": [
+			],
+			"rewards": [
+			]
+		}
+	]
+}

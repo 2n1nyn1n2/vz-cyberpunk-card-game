@@ -1,0 +1,127 @@
+
+{
+	"id":1,
+	"name":"The Abandoned Mine Shaft",
+	"description": "You've stumbled upon an old mine shaft blocked by unstable debris. Rumors
+say it holds valuable ores, but getting inside requires clever resource management or brute
+force. The foreman from your possessions could oversee a safe dig, or a pickaxe could
+break through directly.",
+	"choices": [
+		{
+			"id":1,
+			"name": "Bribe the local miners",
+			"requirements": [
+			],
+			"costs": [
+				{
+					"possession":"money",
+					"count":10
+				}
+			],
+			"rewards": [
+				{
+					"possession":"blue jasper rock",
+					"count":1
+				}
+			]
+		},
+		{
+			"id":2,
+			"name": "Bribe the local miners (with foreman)",
+			"requirements": [
+				{
+					"possession":"foreman",
+					"count":1
+				}
+			],
+			"costs": [
+				{
+					"possession":"money",
+					"count":5
+				}
+			],
+			"rewards": [
+				{
+					"possession":"blue jasper rock",
+					"count":1
+				}
+			]
+		},
+		{
+			"id":3,
+			"name": "Use pickaxe to clear debris",
+			"requirements": [
+			],
+			"costs": [
+				{
+					"possession":"pickaxe",
+					"count":1
+				}
+			],
+			"rewards": [
+				{
+					"possession":"raw ores",
+					"count":2
+				}
+			]
+		},
+		{
+			"id":4,
+			"name": "Trade red jasper for explosives",
+			"requirements": [
+			],
+			"costs": [
+				{
+					"possession":"red jasper",
+					"count":1
+				}
+			],
+			"rewards": [
+				{
+					"possession":"yellow jasper rock",
+					"count":2
+				},
+				{
+					"possession":"mine shaft access",
+					"count":1
+				}
+			]
+		},
+		{
+			"id":5,
+			"name": "Hire day shift workers",
+			"requirements": [
+				{
+					"possession":"foreman",
+					"count":1
+				}
+			],
+			"costs": [
+				{
+					"possession":"red jasper",
+					"count":1
+				}
+			],
+			"rewards": [
+				{
+					"possession":"money",
+					"count":5
+				},
+				{
+					"possession":"Clear path without loss",
+					"count":1
+				}
+			]
+		},
+		{
+			"id":6,
+			"name": "Leave",
+			"requirements": [
+			],
+			"costs": [
+			],
+			"rewards": [
+			]
+		}
+	]
+}

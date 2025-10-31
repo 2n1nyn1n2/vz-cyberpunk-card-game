@@ -1,0 +1,32 @@
+{
+	"id":0,
+	"name":"",
+	"description": "",
+	"choices": [
+		{
+			"id":1,
+			"name": "",
+			"requirements": [
+				{
+					"possession":"",
+					"description":"",
+					"count":0
+				}
+			],
+			"costs": [
+				{
+					"possession":"",
+					"description":"",
+					"count":0
+				}
+			],
+			"rewards": [
+				{
+					"possession":"",
+					"description":"",
+					"count":0
+				}
+			]
+		}
+	]
+}

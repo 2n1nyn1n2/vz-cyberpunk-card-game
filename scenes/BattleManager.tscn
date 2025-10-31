@@ -1,0 +1,52 @@
+[gd_scene load_steps=7 format=3 uid="uid://d34i1tgv1jvjk"]
+
+[ext_resource type="Script" uid="uid://cid1elacle8a2" path="res://scripts/BattleManager.gd" id="1"]
+[ext_resource type="Script" uid="uid://cu5axvsqqm8t6" path="res://scripts/Action.gd" id="2_bdt7j"]
+[ext_resource type="PackedScene" uid="uid://dk20p1s22c3xg" path="res://scenes/Challenge.tscn" id="2_ioovj"]
+[ext_resource type="PackedScene" uid="uid://cnq0jh2i0lsaq" path="res://scenes/Scene.tscn" id="4_qaf7h"]
+[ext_resource type="PackedScene" uid="uid://b8uge61ervxci" path="res://scenes/Player.tscn" id="5_qaf7h"]
+[ext_resource type="Script" uid="uid://bni5kl5xin705" path="res://scripts/Possession.gd" id="6_g24gp"]
+
+[node name="BattleManager" type="Node"]
+script = ExtResource("1")
+
+[node name="Scene" parent="." instance=ExtResource("4_qaf7h")]
+
+[node name="Challenge" parent="." instance=ExtResource("2_ioovj")]
+offset_left = 412.0
+offset_right = 412.0
+
+[node name="Player" parent="." instance=ExtResource("5_qaf7h")]
+offset_top = 128.0
+offset_bottom = 128.0
+
+[node name="WinStatus" type="Label" parent="."]
+offset_left = 168.0
+offset_top = 64.0
+offset_right = 256.0
+offset_bottom = 128.0
+text = "Win Status"
+
+[node name="EnergyLabel" type="Label" parent="."]
+offset_left = 16.0
+offset_top = 16.0
+text = "Energy: 3/3"
+
+[node name="EndTurnButton" type="Button" parent="."]
+offset_top = 64.0
+offset_right = 128.0
+offset_bottom = 128.0
+text = "End Turn"
+
+[node name="Hand" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 640.0
+script = ExtResource("2_bdt7j")
+
+[node name="Possessions" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 284.0
+offset_top = 384.0
+script = ExtResource("6_g24gp")

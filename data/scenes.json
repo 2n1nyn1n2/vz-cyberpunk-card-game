@@ -1,0 +1,10 @@
+[
+  {
+	"name": "002_escape_from_the_mine",
+	"texture": "res://assets/scenes/002_escape_from_the_mine.png",
+	"active":true,
+	"challenges": [
+		"res://data/challenges/abandoned_mine_shaft.json"
+	]
+  }
+]
