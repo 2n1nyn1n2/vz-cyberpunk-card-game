@@ -1,126 +1,126 @@
 {
     "id": 5,
-    "name": "Burocracia Neon: Arreglando Tus Papeles",
-    "description": "En las sombras de Caracas 2099, tu ID forjado parpadea bajo los escáneres corporativos. Arréglalo rápido o enfréntate a los matones del mercado negro. Usa sobornos, hacks o contactos para legitimar tu alias y seguir en la odisea criolla.",
+    "name": "Neon Bureaucracy: Fixing Your Papers",
+    "description": "In the shadows of Caracas 2099, your forged ID flickers under corporate scanners. Fix it fast or face the black market thugs. Use bribes, hacks, or contacts to legitimize your alias and continue on your 'criolla' odyssey.",
     "choices": [
         {
             "id": 1,
-            "name": "Soborno Rápido al Funcionario",
+            "name": "Quick Bribe to the Official",
             "requirements": [],
             "costs": [
                 {
                     "possession": "money",
-                    "description": "$10 en bolívares digitales",
+                    "description": "$10 in digital bolivars",
                     "count": 10
                 }
             ],
             "rewards": [
                 {
                     "possession": "papers",
-                    "description": "ID Legitimado",
+                    "description": "Legitimized ID",
                     "count": 1
                 },
                 {
                     "possession": "money",
-                    "description": "Acceso a zona restringida (venta rápida)",
+                    "description": "Access to restricted zone (quick sale)",
                     "count": 5
                 }
             ]
         },
         {
             "id": 2,
-            "name": "Hack con Cristal Azul",
+            "name": "Blue Crystal Hack",
             "requirements": [
                 {
                     "possession": "blue_crystal",
-                    "description": "Cristal del Orinoco para interferir escáneres",
+                    "description": "Orinoco Crystal to interfere with scanners",
                     "count": 1
                 }
             ],
             "costs": [
                 {
                     "possession": "blue_crystal",
-                    "description": "Consumo del cristal en el hack",
+                    "description": "Crystal consumption for the hack",
                     "count": 1
                 }
             ],
             "rewards": [
                 {
                     "possession": "papers",
-                    "description": "ID Hackeado y Mejorado",
+                    "description": "Hacked and Upgraded ID",
                     "count": 1
                 },
                 {
                     "possession": "blue_crystal",
-                    "description": "Fragmento reciclado",
+                    "description": "Recycled fragment",
                     "count": 1
                 }
             ]
         },
         {
             "id": 3,
-            "name": "Contacto Wayuu en el Mercado Negro",
+            "name": "Wayuu Contact in the Black Market",
             "requirements": [
                 {
                     "possession": "maltin",
-                    "description": "Maltín Polar como gesto de buena fe",
+                    "description": "Maltín Polar as a gesture of good faith",
                     "count": 2
                 }
             ],
             "costs": [
                 {
                     "possession": "maltin",
-                    "description": "Intercambio por documentos falsos premium",
+                    "description": "Exchange for premium fake documents",
                     "count": 2
                 }
             ],
             "rewards": [
                 {
                     "possession": "papers",
-                    "description": "Pasaporte Wayuu Forjado",
+                    "description": "Forged Wayuu Passport",
                     "count": 1
                 },
                 {
                     "possession": "money",
-                    "description": "Descuento en trades futuros",
+                    "description": "Discount on future trades",
                     "count": 8
                 }
             ]
         },
         {
             "id": 4,
-            "name": "Empanada Distractora",
+            "name": "Distracting Empanada",
             "requirements": [
                 {
                     "possession": "empanada",
-                    "description": "Empanada defensiva para desviar atención",
+                    "description": "Defensive empanada to divert attention",
                     "count": 1
                 }
             ],
             "costs": [
                 {
                     "possession": "empanada",
-                    "description": "Sacrificio en la burocracia",
+                    "description": "Sacrifice in the bureaucracy",
                     "count": 1
                 }
             ],
             "rewards": [
                 {
                     "possession": "papers",
-                    "description": "ID Sellado con Distracción",
+                    "description": "ID Stamped with Distraction",
                     "count": 1
                 }
             ]
         },
         {
             "id": 5,
-            "name": "Huir al Amazonas",
+            "name": "Flee to the Amazon",
             "requirements": [],
             "costs": [],
             "rewards": [
                 {
                     "possession": "fatigue",
-                    "description": "Aumento de fatiga por evasión",
+                    "description": "Increased fatigue from evasion",
                     "count": 1
                 }
             ]
