@@ -1,0 +1,129 @@
+{
+    "id": 5,
+    "name": "Burocracia Neon: Arreglando Tus Papeles",
+    "description": "En las sombras de Caracas 2099, tu ID forjado parpadea bajo los escáneres corporativos. Arréglalo rápido o enfréntate a los matones del mercado negro. Usa sobornos, hacks o contactos para legitimar tu alias y seguir en la odisea criolla.",
+    "choices": [
+        {
+            "id": 1,
+            "name": "Soborno Rápido al Funcionario",
+            "requirements": [],
+            "costs": [
+                {
+                    "possession": "money",
+                    "description": "$10 en bolívares digitales",
+                    "count": 10
+                }
+            ],
+            "rewards": [
+                {
+                    "possession": "papers",
+                    "description": "ID Legitimado",
+                    "count": 1
+                },
+                {
+                    "possession": "money",
+                    "description": "Acceso a zona restringida (venta rápida)",
+                    "count": 5
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Hack con Cristal Azul",
+            "requirements": [
+                {
+                    "possession": "blue_crystal",
+                    "description": "Cristal del Orinoco para interferir escáneres",
+                    "count": 1
+                }
+            ],
+            "costs": [
+                {
+                    "possession": "blue_crystal",
+                    "description": "Consumo del cristal en el hack",
+                    "count": 1
+                }
+            ],
+            "rewards": [
+                {
+                    "possession": "papers",
+                    "description": "ID Hackeado y Mejorado",
+                    "count": 1
+                },
+                {
+                    "possession": "blue_crystal",
+                    "description": "Fragmento reciclado",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Contacto Wayuu en el Mercado Negro",
+            "requirements": [
+                {
+                    "possession": "maltin",
+                    "description": "Maltín Polar como gesto de buena fe",
+                    "count": 2
+                }
+            ],
+            "costs": [
+                {
+                    "possession": "maltin",
+                    "description": "Intercambio por documentos falsos premium",
+                    "count": 2
+                }
+            ],
+            "rewards": [
+                {
+                    "possession": "papers",
+                    "description": "Pasaporte Wayuu Forjado",
+                    "count": 1
+                },
+                {
+                    "possession": "money",
+                    "description": "Descuento en trades futuros",
+                    "count": 8
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Empanada Distractora",
+            "requirements": [
+                {
+                    "possession": "empanada",
+                    "description": "Empanada defensiva para desviar atención",
+                    "count": 1
+                }
+            ],
+            "costs": [
+                {
+                    "possession": "empanada",
+                    "description": "Sacrificio en la burocracia",
+                    "count": 1
+                }
+            ],
+            "rewards": [
+                {
+                    "possession": "papers",
+                    "description": "ID Sellado con Distracción",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Huir al Amazonas",
+            "requirements": [],
+            "costs": [],
+            "rewards": [
+                {
+                    "possession": "fatigue",
+                    "description": "Aumento de fatiga por evasión",
+                    "count": 1
+                }
+            ]
+        }
+    ]
+}
