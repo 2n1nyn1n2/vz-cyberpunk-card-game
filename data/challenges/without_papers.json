@@ -1,0 +1,129 @@
+{
+    "id": 5,
+    "name": "Neon Bureaucracy: Fixing Your Papers",
+    "description": "In the shadows of Caracas 2099, your forged ID flickers under corporate scanners. Fix it fast or face the black market thugs. Use bribes, hacks, or contacts to legitimize your alias and continue on your 'criolla' odyssey.",
+    "choices": [
+        {
+            "id": 1,
+            "name": "Quick Bribe to the Official",
+            "requirements": [],
+            "costs": [
+                {
+                    "possession": "money",
+                    "description": "$10 in digital bolivars",
+                    "count": 10
+                }
+            ],
+            "rewards": [
+                {
+                    "possession": "papers",
+                    "description": "Legitimized ID",
+                    "count": 1
+                },
+                {
+                    "possession": "money",
+                    "description": "Access to restricted zone (quick sale)",
+                    "count": 5
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Blue Crystal Hack",
+            "requirements": [
+                {
+                    "possession": "blue_crystal",
+                    "description": "Orinoco Crystal to interfere with scanners",
+                    "count": 1
+                }
+            ],
+            "costs": [
+                {
+                    "possession": "blue_crystal",
+                    "description": "Crystal consumption for the hack",
+                    "count": 1
+                }
+            ],
+            "rewards": [
+                {
+                    "possession": "papers",
+                    "description": "Hacked and Upgraded ID",
+                    "count": 1
+                },
+                {
+                    "possession": "blue_crystal",
+                    "description": "Recycled fragment",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Wayuu Contact in the Black Market",
+            "requirements": [
+                {
+                    "possession": "maltin",
+                    "description": "Maltín Polar as a gesture of good faith",
+                    "count": 2
+                }
+            ],
+            "costs": [
+                {
+                    "possession": "maltin",
+                    "description": "Exchange for premium fake documents",
+                    "count": 2
+                }
+            ],
+            "rewards": [
+                {
+                    "possession": "papers",
+                    "description": "Forged Wayuu Passport",
+                    "count": 1
+                },
+                {
+                    "possession": "money",
+                    "description": "Discount on future trades",
+                    "count": 8
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Distracting Empanada",
+            "requirements": [
+                {
+                    "possession": "empanada",
+                    "description": "Defensive empanada to divert attention",
+                    "count": 1
+                }
+            ],
+            "costs": [
+                {
+                    "possession": "empanada",
+                    "description": "Sacrifice in the bureaucracy",
+                    "count": 1
+                }
+            ],
+            "rewards": [
+                {
+                    "possession": "papers",
+                    "description": "ID Stamped with Distraction",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Flee to the Amazon",
+            "requirements": [],
+            "costs": [],
+            "rewards": [
+                {
+                    "possession": "fatigue",
+                    "description": "Increased fatigue from evasion",
+                    "count": 1
+                }
+            ]
+        }
+    ]
+}
