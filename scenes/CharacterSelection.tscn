@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://bdpacdmx3wxto"]
+
+[ext_resource type="Script" uid="uid://f00hdtyo7rm" path="res://scripts/CharacterSelection.gd" id="1_o6o0h"]
+[ext_resource type="PackedScene" uid="uid://cnq0jh2i0lsaq" path="res://scenes/Scene.tscn" id="2_ta0h7"]
+[ext_resource type="Script" uid="uid://cu5axvsqqm8t6" path="res://scripts/Action.gd" id="5_d8uxx"]
+
+[node name="CharacterSelection" type="Node"]
+script = ExtResource("1_o6o0h")
+
+[node name="Scene" parent="." instance=ExtResource("2_ta0h7")]
+
+[node name="Hand" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 640.0
+offset_bottom = 640.0
+script = ExtResource("5_d8uxx")
+
+[node name="SelectCharacterContainer" type="PanelContainer" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 1792.0
+offset_bottom = 2048.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="SelectCharacter" type="Button" parent="SelectCharacterContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 96
+text = "Choose This Character
+"

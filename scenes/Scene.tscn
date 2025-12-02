@@ -26,10 +26,34 @@ texture = SubResource("CompressedTexture2D_dvpi0")
 expand_mode = 2
 stretch_mode = 6
 
-[node name="SceneName" type="Label" parent="."]
-layout_mode = 0
-offset_left = -62.0
-offset_top = 66.0
-offset_right = 54.0
-offset_bottom = 89.0
-text = "Challenge Name"
+[node name="SceneNameContainer" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 256.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="SceneName" type="Label" parent="SceneNameContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 96
+text = "Scene Name"
+
+[node name="SceneDescContainer" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 256.0
+offset_bottom = 512.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="SceneDesc" type="Label" parent="SceneDescContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 64
+text = "Scene Description"

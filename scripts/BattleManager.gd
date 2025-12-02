@@ -52,7 +52,7 @@ func get_active_records(path: String):
 	return data
 
 func load_scenes_from_json(path: String):
-	var data = get_active_records(path)
+	var data = ActiveRecords.get_active_dictionary_records(path, "starting_location")
 	#print("Scene Data:", data)
 	if typeof(data) == TYPE_ARRAY and data.size() > 0:
 			scene_data = data.pick_random()

@@ -11,10 +11,14 @@ config_version=5
 [application]
 
 config/name="vz-cyberpunk-card-game"
-run/main_scene="res://scenes/BattleManager.tscn"
+run/main_scene="uid://bdpacdmx3wxto"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 boot_splash/image="uid://drrpt4rdkcwvu"
 config/icon="uid://drrpt4rdkcwvu"
+
+[autoload]
+
+ActiveRecords="*res://scripts/ActiveRecords.gd"
 
 [display]
 
