@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c1qmmxgje04lp"
-path="res://.godot/imported/caucasian_woman.png-4621ab72d3e1641557e1b56a4e0aa989.ctex"
+uid="uid://vovx01xxqhas"
+path="res://.godot/imported/pozo_negro_central.jpg-63e52aac32c03af6322c8031bf5db979.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/players/caucasian_woman.png"
-dest_files=["res://.godot/imported/caucasian_woman.png-4621ab72d3e1641557e1b56a4e0aa989.ctex"]
+source_file="res://assets/challenges/pozo_negro_central.jpg"
+dest_files=["res://.godot/imported/pozo_negro_central.jpg-63e52aac32c03af6322c8031bf5db979.ctex"]
 
 [params]
 

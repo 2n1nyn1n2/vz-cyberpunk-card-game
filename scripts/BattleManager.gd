@@ -71,8 +71,8 @@ func load_players_from_json(path: String):
 			#print("Known possession Name: " + possession.possession_name)
 
 		var deck_possessions_unknown = {}
-		for players in data:
-			var desired_possessions = players.desired_possessions
+		for player_element in data:
+			var desired_possessions = player_element.desired_possessions
 			if typeof(desired_possessions) == TYPE_ARRAY and desired_possessions.size() > 0:
 				for possession_name in desired_possessions:
 					if(!deck_possessions_exist.has(possession_name)):
@@ -92,8 +92,14 @@ func load_players_from_json(path: String):
 		print("Unknown possessions: " + JSON.stringify(deck_possessions_unknown_template, "\t"))
 
 		player_data = data.pick_random()
+		
+		# if player was already selected, use it
+		for player_element in data:
+			if player.player_name == player_element.get("name", "Unknown"):
+				player_data = player_element
+
 		player.player_name = player_data.get("name", "Unknown")
-		player.player_image.texture = load(player_data.get("texture", ""))
+		player.player_image_texture = load(player_data.get("texture", ""))
 		player.update_ui()
 
 func load_actions_from_json(path: String):

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dow2kk3csjqf4"
-path="res://.godot/imported/african_woman.png-29873d54aefc325eeb80e57a4f68bf0c.ctex"
+uid="uid://c77sp6ywohmai"
+path="res://.godot/imported/contaminacion_toxica.jpg-474adbd70e03f3e013626817d3648c42.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/players/african_woman.png"
-dest_files=["res://.godot/imported/african_woman.png-29873d54aefc325eeb80e57a4f68bf0c.ctex"]
+source_file="res://assets/challenges/contaminacion_toxica.jpg"
+dest_files=["res://.godot/imported/contaminacion_toxica.jpg-474adbd70e03f3e013626817d3648c42.ctex"]
 
 [params]
 

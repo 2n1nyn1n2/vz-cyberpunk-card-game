@@ -11,6 +11,7 @@ const PLAYER_HAND_X_OFFSET:int = 96
 var deck_players: Array = []
 var hand_players: Array = []
 var scene_data: Dictionary
+var selected_player : Node
 
 func _ready():
 	load_scenes_from_json("res://data/scenes.json")
@@ -24,13 +25,19 @@ func _on_player_toggled(state_owner:Node, state: bool):
 		" is_toggled:", state, 
 		" deck_players.size():", deck_players.size())
 	
+	selected_player = null
+	select_character_button.disabled = true
+	
 	for i in range(deck_players.size()):
 		var player = deck_players[i]
 		print("_on_player_toggled: player:", player, " is_toggled:", player.is_toggled)
-		if state:
-			player.set_toggled_state(state_owner == player)
+		if state && state_owner == player:
+			player.set_toggled_state(true)
+			selected_player = player
 		else:
 			player.set_toggled_state(false)
+	
+	select_character_button.disabled = selected_player == null
 
 func load_scenes_from_json(path: String):
 	var data = ActiveRecords.get_active_dictionary_records(path, "character_selection")
@@ -70,7 +77,7 @@ func draw_hand(n: int):
 		player.position = pos
 
 func _on_select_character_pressed():
-	pass
+	TransferPlayerToScene.transfer_player(selected_player, "res://scenes/BattleManager.tscn")
 
 func update_ui():
 	pass

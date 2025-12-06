@@ -28,5 +28,6 @@ size_flags_vertical = 4
 [node name="SelectCharacter" type="Button" parent="SelectCharacterContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 96
+disabled = true
 text = "Choose This Character
 "

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3yqa1mreysqk"
-path="res://.godot/imported/african_man.png-684a4bf029e175ac65b48b25333fc493.ctex"
+uid="uid://ccfn3mcl7lam0"
+path="res://.godot/imported/group_bribe.jpg-2fddc04da9f40d61ea1fe70381e5a289.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/players/african_man.png"
-dest_files=["res://.godot/imported/african_man.png-684a4bf029e175ac65b48b25333fc493.ctex"]
+source_file="res://assets/players/group_bribe.jpg"
+dest_files=["res://.godot/imported/group_bribe.jpg-2fddc04da9f40d61ea1fe70381e5a289.ctex"]
 
 [params]
 

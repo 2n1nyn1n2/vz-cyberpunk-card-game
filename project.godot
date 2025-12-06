@@ -19,6 +19,7 @@ config/icon="uid://drrpt4rdkcwvu"
 [autoload]
 
 ActiveRecords="*res://scripts/ActiveRecords.gd"
+TransferPlayerToScene="*res://scripts/TransferPlayerToScene.gd"
 
 [display]
 

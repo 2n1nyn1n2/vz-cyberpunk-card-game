@@ -1,0 +1,103 @@
+{
+  "id": 2,
+  "name": "Synthetic Arepas Black Market",
+  "description": "Chacao ex-subway tunnels, 2099. Cyber hunger is killing you. The black market sells synthetic arepas made with hacked flour from Colombia and mutant soy from Guri. Get 5 Net Calories before SUNA inspectors, 'colectivos' (armed groups), or a blackout leaves you with nothing... and without a cybernetic stomach.\n\nIf you run out of Cybernetic Stomach, you're out of the game forever!",
+  "choices": [
+	{
+	  "id": 1,
+	  "name": "Negotiate with the 'Pana Catire' (safe and cheap)",
+	  "requirements": [],
+	  "costs": [
+		{
+		  "possession": "energy",
+		  "description": "Energy",
+		  "count": 0
+		}
+	  ],
+	  "rewards": [
+		{
+		  "possession": "arepa_boost",
+		  "description": "Arepa Boost",
+		  "count": 1
+		},
+		{
+		  "possession": "calories",
+		  "description": "Net Calories",
+		  "count": 2
+		},
+		{
+		  "possession": "adversity_block",
+		  "description": "Adversity Block",
+		  "count": 1
+		}
+	  ]
+	},
+	{
+	  "id": 2,
+	  "name": "Use Hacked Flour (double portion)",
+	  "requirements": [],
+	  "costs": [
+		{
+		  "possession": "energy",
+		  "description": "Energy",
+		  "count": 1
+		}
+	  ],
+	  "rewards": [
+		{
+		  "possession": "duplicate_next_arepa",
+		  "description": "Duplicate the next Arepa",
+		  "count": 1
+		}
+	  ]
+	},
+	{
+	  "id": 3,
+	  "name": "Bribe the SUNA Inspectors (total peace)",
+	  "requirements": [],
+	  "costs": [
+		{
+		  "possession": "energy",
+		  "description": "Energy",
+		  "count": 2
+		}
+	  ],
+	  "rewards": [
+		{
+		  "possession": "ignore_all_adversities",
+		  "description": "Ignore ALL adversities this turn",
+		  "count": 1
+		},
+		{
+		  "possession": "extra_turn",
+		  "description": "Extra turn",
+		  "count": 1
+		}
+	  ]
+	},
+	{
+	  "id": 4,
+	  "name": "Activate Digestor Implant (eat even the toxic stuff)",
+	  "requirements": [],
+	  "costs": [
+		{
+		  "possession": "energy",
+		  "description": "Energy",
+		  "count": 1
+		}
+	  ],
+	  "rewards": [
+		{
+		  "possession": "convert_toxic_to_calories",
+		  "description": "Convert Toxic Arepa into Calories",
+		  "count": 1
+		},
+		{
+		  "possession": "steal_card",
+		  "description": "Steal 1 extra card",
+		  "count": 1
+		}
+	  ]
+	}
+  ]
+}

@@ -11,7 +11,6 @@ var block: int = 0
 
 @onready var hp_label = $HP
 @onready var player_name_label = $PlayerName
-@onready var player_background_rect = $Background
 
 const PLAYER_SIZE = Vector2(256, 256)
 
@@ -25,6 +24,7 @@ const COLOR_HOVER = Color.LIGHT_GRAY
 func _ready():
 	hp = max_hp	
 	custom_minimum_size = PLAYER_SIZE
+	var player_background_rect = $Background
 	player_background_rect.color = COLOR_OFF
 	
 func update_ui():
@@ -89,6 +89,7 @@ func toggle():
 	emit_signal("toggled", self, is_toggled)
 
 func update_visuals():
+	var player_background_rect = $Background
 	if is_toggled:
 		player_background_rect.color = COLOR_ON
 	elif is_hovering:

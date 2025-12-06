@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bg0oda72f1xdp"
-path="res://.godot/imported/caucasian_man.png-222f197b53e18d1e7615a3dd27906bf0.ctex"
+uid="uid://dpn0t8vybkogf"
+path="res://.godot/imported/003_calle_derrota_hambrienta.jpg-6fd2d0b2aaf39859fcb6e78d0c2af120.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/players/caucasian_man.png"
-dest_files=["res://.godot/imported/caucasian_man.png-222f197b53e18d1e7615a3dd27906bf0.ctex"]
+source_file="res://assets/scenes/003_calle_derrota_hambrienta.jpg"
+dest_files=["res://.godot/imported/003_calle_derrota_hambrienta.jpg-6fd2d0b2aaf39859fcb6e78d0c2af120.ctex"]
 
 [params]
 

@@ -60,23 +60,43 @@
 	"desired_possessions":["red jasper","foreman","day shift"]
   },
   {
-	"name": "african_man",
-	"texture": "res://assets/players/african_man.png",
-	"active":false
+	"name": "neighborhood_contact",
+	"description": "",
+	"goal":"",
+	"texture": "res://assets/players/neighborhood_contact.jpg",
+	"active":true,
+	"starting_actions":[],
+	"starting_possessions":[],
+	"desired_possessions":[]
   },
   {
-	"name": "african_woman",
-	"texture": "res://assets/players/african_woman.png",
-	"active":false
+	"name": "drone_hacker",
+	"description": "",
+	"goal":"",
+	"texture": "res://assets/players/drone_hacker.jpg",
+	"active":true,
+	"starting_actions":[],
+	"starting_possessions":[],
+	"desired_possessions":[]
   },
   {
-	"name": "caucasian_man",
-	"texture": "res://assets/players/caucasian_man.png",
-	"active":false
+	"name": "mini_cybernetic_connector",
+	"description": "",
+	"goal":"",
+	"texture": "res://assets/players/mini_cybernetic_connector.jpg",
+	"active":true,
+	"starting_actions":[],
+	"starting_possessions":[],
+	"desired_possessions":[]
   },
   {
-	"name": "caucasian_woman",
-	"texture": "res://assets/players/caucasian_woman.png",
-	"active":false
+	"name": "group_bribe",
+	"description": "",
+	"goal":"",
+	"texture": "res://assets/players/group_bribe.jpg",
+	"active":true,
+	"starting_actions":[],
+	"starting_possessions":[],
+	"desired_possessions":[]
   }
 ]
