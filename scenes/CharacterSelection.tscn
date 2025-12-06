@@ -31,3 +31,35 @@ theme_override_font_sizes/font_size = 96
 disabled = true
 text = "Choose This Character
 "
+
+[node name="ScrollHandLeftContainer" type="PanelContainer" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 1536.0
+offset_right = -1024.0
+offset_bottom = 1792.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="ScrollHandLeft" type="Button" parent="ScrollHandLeftContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 96
+disabled = true
+text = "< LEFT <"
+
+[node name="ScrollHandRightContainer" type="PanelContainer" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 1024.0
+offset_top = 1536.0
+offset_bottom = 1792.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="ScrollHandRight" type="Button" parent="ScrollHandRightContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 96
+disabled = true
+text = "> RIGHT >"

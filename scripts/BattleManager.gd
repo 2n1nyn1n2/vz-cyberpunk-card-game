@@ -28,11 +28,14 @@ func _ready():
 	load_actions_from_json("res://data/actions.json")
 	load_possessions_from_json("res://data/possessions.json")
 	load_challenges_from_json("res://data/challenges.json")
-	load_players_from_json("res://data/players.json")
-	draw_hand(HAND_SIZE)
+	load_players()
 	draw_possessions();
 	update_ui()
 	end_turn_button.pressed.connect(_on_end_turn_pressed)
+
+func load_players():
+	load_players_from_json("res://data/players.json")
+	draw_hand(HAND_SIZE)
 
 func get_active_records(path: String):
 	var data : Array = [];

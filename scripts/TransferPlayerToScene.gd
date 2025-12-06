@@ -20,7 +20,8 @@ func transfer_player(player_node: Node, scene_path : String):
 	var placeholder_player = new_scene_root.find_child("Player", true) 
 	
 	if placeholder_player and is_instance_valid(placeholder_player):
-		placeholder_player.player_name = player_name_to_transfer		
+		placeholder_player.player_name = player_name_to_transfer
+		new_scene_root.load_players()
 		print("Successfully transferred name '", player_name_to_transfer, "' to placeholder.")
 	else:
 		print("ERROR: Could not find placeholder player node named 'Player' in the new scene.")
