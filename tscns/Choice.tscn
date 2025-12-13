@@ -1,0 +1,41 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckp2joooo40c"]
+
+[ext_resource type="Script" uid="uid://dfq582rl2hmqt" path="res://scripts/Choice.gd" id="1"]
+
+[node name="Action" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1")
+
+[node name="Background" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(96, 128)
+layout_mode = 0
+offset_right = 190.0
+offset_bottom = 320.0
+mouse_filter = 1
+
+[node name="ChoiceName" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 189.0
+offset_bottom = 65.0
+mouse_filter = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Choice Name"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="ChoiceDescription" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 64.0
+offset_right = 189.0
+offset_bottom = 286.0
+mouse_filter = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Choice Description"
+autowrap_mode = 2
+
+[connection signal="mouse_entered" from="." to="." method="_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_mouse_exited"]

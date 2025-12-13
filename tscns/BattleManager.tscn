@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=3 uid="uid://d34i1tgv1jvjk"]
+
+[ext_resource type="Script" uid="uid://cp3n3ocwin5bo" path="res://scripts/BattleManager.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://p5uilh0vd7c2" path="res://tscns/Challenge.tscn" id="2_ioovj"]
+[ext_resource type="PackedScene" path="res://tscns/Background.tscn" id="4_qaf7h"]
+[ext_resource type="PackedScene" uid="uid://bbqcv14i0kyib" path="res://tscns/Character.tscn" id="4_x76o4"]
+[ext_resource type="Script" uid="uid://bakguwt464ofm" path="res://scripts/Possession.gd" id="6_g24gp"]
+
+[node name="BattleManager" type="Node"]
+script = ExtResource("1")
+
+[node name="Background" parent="." instance=ExtResource("4_qaf7h")]
+
+[node name="Challenge" parent="." instance=ExtResource("2_ioovj")]
+offset_left = 1524.0
+offset_top = 512.0
+offset_right = 1524.0
+offset_bottom = 512.0
+
+[node name="Character" parent="." instance=ExtResource("4_x76o4")]
+offset_left = 4.0
+offset_top = 512.0
+offset_right = 4.0
+offset_bottom = 512.0
+
+[node name="SelectChoiceContainer" type="PanelContainer" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 1792.0
+offset_bottom = 2048.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="SelectChoice" type="Button" parent="SelectChoiceContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 96
+disabled = true
+text = "Make This Choice"
+
+[node name="Possessions" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 544.0
+offset_top = 512.0
+offset_right = 544.0
+offset_bottom = 512.0
+script = ExtResource("6_g24gp")
+
+[node name="Hand" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 4.0
+offset_top = 1312.0
+offset_right = 2044.0
+offset_bottom = 1792.0

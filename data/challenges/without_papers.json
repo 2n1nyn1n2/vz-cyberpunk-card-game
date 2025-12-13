@@ -1,0 +1,130 @@
+{
+  "choices": [
+    {
+      "costs": [
+        {
+          "count": 10,
+          "description": "$10 in digital bolivars",
+          "possession": "money"
+        }
+      ],
+      "id": 1,
+      "name": "Quick Bribe to the Official",
+      "requirements": [],
+      "rewards": [
+        {
+          "count": 1,
+          "description": "Legitimized ID",
+          "possession": "identity papers"
+        },
+        {
+          "count": 5,
+          "description": "Access to restricted zone (quick sale)",
+          "possession": "money"
+        }
+      ]
+    },
+    {
+      "costs": [
+        {
+          "count": 1,
+          "description": "Crystal consumption for the hack",
+          "possession": "blue jasper"
+        }
+      ],
+      "id": 2,
+      "name": "Blue Crystal Hack",
+      "requirements": [
+        {
+          "count": 1,
+          "description": "Orinoco Crystal to interfere with scanners",
+          "possession": "blue jasper"
+        }
+      ],
+      "rewards": [
+        {
+          "count": 1,
+          "description": "Hacked and Upgraded ID",
+          "possession": "identity papers"
+        },
+        {
+          "count": 1,
+          "description": "Recycled fragment",
+          "possession": "blue jasper"
+        }
+      ]
+    },
+    {
+      "costs": [
+        {
+          "count": 2,
+          "description": "Exchange for premium fake documents",
+          "possession": "maltin"
+        }
+      ],
+      "id": 3,
+      "name": "Wayuu Contact in the Black Market",
+      "requirements": [
+        {
+          "count": 2,
+          "description": "Maltín Polar as a gesture of good faith",
+          "possession": "maltin"
+        }
+      ],
+      "rewards": [
+        {
+          "count": 1,
+          "description": "Forged Wayuu Passport",
+          "possession": "identity papers"
+        },
+        {
+          "count": 8,
+          "description": "Discount on future trades",
+          "possession": "money"
+        }
+      ]
+    },
+    {
+      "costs": [
+        {
+          "count": 1,
+          "description": "Sacrifice in the bureaucracy",
+          "possession": "empanada"
+        }
+      ],
+      "id": 4,
+      "name": "Distracting Empanada",
+      "requirements": [
+        {
+          "count": 1,
+          "description": "Defensive empanada to divert attention",
+          "possession": "empanada"
+        }
+      ],
+      "rewards": [
+        {
+          "count": 1,
+          "description": "ID Stamped with Distraction",
+          "possession": "identity papers"
+        }
+      ]
+    },
+    {
+      "costs": [],
+      "id": 5,
+      "name": "Flee to the Amazon",
+      "requirements": [],
+      "rewards": [
+        {
+          "count": 1,
+          "description": "ticket to brazil",
+          "possession": "ticket to brazil"
+        }
+      ]
+    }
+  ],
+  "description": "In the shadows of Caracas 2099, your forged ID flickers under corporate scanners. Fix it fast or face the black market thugs. Use bribes, hacks, or contacts to legitimize your alias and continue on your 'criolla' odyssey.",
+  "id": 5,
+  "name": "Neon Bureaucracy: Fixing Your Papers",
+  "texture": "res://assets/scenes/without_papers.jpg"
+}

@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=3 uid="uid://p5uilh0vd7c2"]
+
+[ext_resource type="Script" uid="uid://dl80god5lsmnv" path="res://scripts/Challenge.gd" id="1"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_h80d6"]
+
+[node name="Challenge" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1")
+
+[node name="Background" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(512, 800)
+layout_mode = 1
+offset_right = 512.0
+offset_bottom = 800.0
+mouse_filter = 1
+
+[node name="ChallengeImage" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 96.0
+offset_right = 486.0
+offset_bottom = 784.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = SubResource("CompressedTexture2D_h80d6")
+stretch_mode = 5
+
+[node name="ChallengeName" type="Label" parent="."]
+layout_mode = 0
+offset_left = 16.0
+offset_right = 496.0
+offset_bottom = 32.0
+mouse_filter = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Challenge Name"
+
+[node name="ChallengeDescription" type="Label" parent="."]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 32.0
+offset_right = 496.0
+offset_bottom = 96.0
+mouse_filter = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Challenge Description"
+autowrap_mode = 2
+
+[connection signal="mouse_entered" from="." to="." method="_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_mouse_exited"]

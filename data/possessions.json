@@ -1,0 +1,127 @@
+[
+  {
+    "active": true,
+    "max": 1,
+    "name": "fuel",
+    "texture": "res://assets/possessions/fuel.jpg"
+  },
+  {
+    "active": true,
+    "max": 999,
+    "name": "money",
+    "texture": "res://assets/possessions/money.jpg"
+  },
+  {
+    "active": true,
+    "max": 1,
+    "name": "day shift",
+    "texture": "res://assets/possessions/day_shift.jpg"
+  },
+  {
+    "active": true,
+    "max": 1,
+    "name": "flashlight",
+    "texture": "res://assets/possessions/flashlight.jpg"
+  },
+  {
+    "active": true,
+    "max": 1,
+    "name": "foreman",
+    "texture": "res://assets/possessions/foreman.jpg"
+  },
+  {
+    "active": true,
+    "max": 1,
+    "name": "night shift",
+    "texture": "res://assets/possessions/night_shift.jpg"
+  },
+  {
+    "active": true,
+    "max": 1,
+    "name": "pickaxe",
+    "texture": "res://assets/possessions/pickaxe.jpg"
+  },
+  {
+    "active": true,
+    "name": "raw meat",
+    "texture": "res://assets/possessions/raw_meat.jpg"
+  },
+  {
+    "active": true,
+    "max": 1,
+    "name": "red jasper",
+    "texture": "res://assets/possessions/red_jasper.jpg"
+  },
+  {
+    "active": true,
+    "max": 1,
+    "name": "barracks",
+    "texture": "res://assets/possessions/sleeping_quarters.jpg"
+  },
+  {
+    "active": true,
+    "max": 1,
+    "name": "spatula",
+    "texture": "res://assets/possessions/spatula.jpg"
+  },
+  {
+    "active": true,
+    "max": 10,
+    "name": "yeast",
+    "texture": "res://assets/possessions/yeast.jpg"
+  },
+  {
+    "active": true,
+    "max": 1,
+    "name": "calories",
+    "texture": "res://assets/possessions/calories.png"
+  },
+  {
+    "active": true,
+    "max": 1,
+    "name": "ignore bad food",
+    "texture": "res://assets/possessions/ignore_bad_food.png"
+  },
+  {
+    "active": true,
+    "max": 1,
+    "name": "identity papers",
+    "texture": "res://assets/possessions/identity_papers.png"
+  },
+  {
+    "active": true,
+    "max": 1,
+    "name": "blue jasper",
+    "texture": "res://assets/possessions/blue_jasper.png"
+  },
+  {
+    "active": true,
+    "max": 1,
+    "name": "clear path to escape",
+    "texture": "res://assets/possessions/clear_path_to_escape.png"
+  },
+  {
+    "active": true,
+    "max": 1,
+    "name": "green jasper",
+    "texture": "res://assets/possessions/green_jasper.png"
+  },
+  {
+    "active": true,
+    "max": 1,
+    "name": "raw ores",
+    "texture": "res://assets/possessions/raw_ores.png"
+  },
+  {
+    "active": true,
+    "max": 1,
+    "name": "ticket to brazil",
+    "texture": "res://assets/possessions/ticket_to_brazil.png"
+  },
+  {
+    "active": true,
+    "max": 1,
+    "name": "yellow jasper",
+    "texture": "res://assets/possessions/yellow_jasper.png"
+  }
+]

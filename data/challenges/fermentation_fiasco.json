@@ -1,0 +1,109 @@
+{
+  "choices": [
+    {
+      "costs": [
+        {
+          "count": 6,
+          "description": "",
+          "possession": "money"
+        }
+      ],
+      "id": 1,
+      "name": "Buy purified water",
+      "requirements": [],
+      "rewards": [
+        {
+          "count": 4,
+          "description": "Restart vat; gain 1 ration pack which you sell.",
+          "possession": "money"
+        }
+      ]
+    },
+    {
+      "costs": [
+        {
+          "count": 1,
+          "description": "",
+          "possession": "raw meat"
+        }
+      ],
+      "id": 2,
+      "name": "Trade raw meat for purified water",
+      "requirements": [],
+      "rewards": [
+        {
+          "count": 4,
+          "description": "Restart vat; gain 1 ration pack which you sell.",
+          "possession": "money"
+        }
+      ]
+    },
+    {
+      "costs": [
+        {
+          "count": 1,
+          "description": "",
+          "possession": "yeast"
+        }
+      ],
+      "id": 3,
+      "name": "Add extra yeast to overpower contamination",
+      "requirements": [],
+      "rewards": [
+        {
+          "count": 1,
+          "description": "Double rations; gain 1 blue jasper from brewer's thanks.",
+          "possession": "blue jasper"
+        }
+      ]
+    },
+    {
+      "costs": [],
+      "id": 4,
+      "name": "Stir with spatula to aerate",
+      "requirements": [
+        {
+          "count": 1,
+          "possession": "spatula"
+        }
+      ],
+      "rewards": [
+        {
+          "count": 9,
+          "description": "Clean fermentation; gain brew sales",
+          "possession": "money"
+        }
+      ]
+    },
+    {
+      "costs": [],
+      "id": 5,
+      "name": "Scan with flashlight for impurities",
+      "requirements": [
+        {
+          "count": 1,
+          "description": "",
+          "possession": "flashlight"
+        }
+      ],
+      "rewards": [
+        {
+          "count": 2,
+          "description": "Remove source of impurities",
+          "possession": "yeast"
+        }
+      ]
+    },
+    {
+      "costs": [],
+      "id": 6,
+      "name": "Abandon the vat",
+      "requirements": [],
+      "rewards": []
+    }
+  ],
+  "description": "A brewer's vat has stalled fermentation due to contaminated water, halting production of vital rations. Yeast is key to kickstarting it, but sourcing clean inputs is tricky.Spatula could stir and aerate, or flashlight reveal hidden contaminants.",
+  "id": 0,
+  "name": "The Fermentation Fiasco",
+  "texture": "res://assets/scenes/fermentation_fiasco.jpg"
+}

@@ -1,0 +1,135 @@
+{
+  "choices": [
+    {
+      "costs": [
+        {
+          "count": 10,
+          "possession": "money"
+        }
+      ],
+      "id": 1,
+      "name": "Bribe the local miners",
+      "requirements": [],
+      "rewards": [
+        {
+          "count": 1,
+          "possession": "blue jasper"
+        }
+      ]
+    },
+    {
+      "costs": [
+        {
+          "count": 5,
+          "possession": "money"
+        }
+      ],
+      "id": 2,
+      "name": "Bribe the local miners (with foreman)",
+      "requirements": [
+        {
+          "count": 1,
+          "possession": "foreman"
+        }
+      ],
+      "rewards": [
+        {
+          "count": 1,
+          "possession": "red jasper"
+        }
+      ]
+    },
+    {
+      "costs": [
+        {
+          "count": 1,
+          "possession": "pickaxe"
+        }
+      ],
+      "id": 3,
+      "name": "Use pickaxe to clear debris",
+      "requirements": [],
+      "rewards": [
+        {
+          "count": 2,
+          "possession": "raw ores"
+        }
+      ]
+    },
+    {
+      "costs": [
+        {
+          "count": 1,
+          "possession": "red jasper"
+        }
+      ],
+      "id": 4,
+      "name": "Trade red jasper for explosives",
+      "requirements": [],
+      "rewards": [
+        {
+          "count": 2,
+          "possession": "yellow jasper"
+        },
+        {
+          "count": 1,
+          "possession": "clear path to escape"
+        }
+      ]
+    },
+    {
+      "costs": [
+        {
+          "count": 1,
+          "possession": "red jasper"
+        }
+      ],
+      "id": 5,
+      "name": "Hire day shift workers",
+      "requirements": [
+        {
+          "count": 1,
+          "possession": "foreman"
+        }
+      ],
+      "rewards": [
+        {
+          "count": 5,
+          "possession": "money"
+        },
+        {
+          "count": 1,
+          "possession": "clear path to escape"
+        }
+      ]
+    },
+    {
+      "costs": [],
+      "id": 6,
+      "name": "Leave",
+      "requirements": [],
+      "rewards": []
+    },
+    {
+      "costs": [],
+      "id": 7,
+      "name": "Find the foreman",
+      "requirements": [
+        {
+          "count": 1,
+          "possession": "no foreman"
+        }
+      ],
+      "rewards": [
+        {
+          "count": 1,
+          "possession": "foreman"
+        }
+      ]
+    }
+  ],
+  "description": "You've stumbled upon an old mine shaft blocked by unstable debris. Rumors say it holds valuable ores, but getting inside requires clever resource management or brute force. The foreman from your possessions could oversee a safe dig, or a pickaxe could break through directly.",
+  "id": 1,
+  "name": "The Abandoned Mine Shaft",
+  "texture": "res://assets/scenes/abandoned_mine_shaft.jpg"
+}

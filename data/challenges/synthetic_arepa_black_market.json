@@ -1,0 +1,84 @@
+{
+  "choices": [
+    {
+      "costs": [],
+      "id": 1,
+      "name": "Negotiate with the 'Pana Catire' (fair friend) (safe and cheap)",
+      "requirements": [
+        {
+          "count": 1,
+          "description": "ignore bad food",
+          "possession": "ignore bad food"
+        }
+      ],
+      "rewards": [
+        {
+          "count": 2,
+          "description": "calories",
+          "possession": "calories"
+        }
+      ]
+    },
+    {
+      "costs": [
+        {
+          "count": 1,
+          "description": "hacked flour",
+          "possession": "hacked flour"
+        }
+      ],
+      "id": 2,
+      "name": "Use Hacked Flour (double portion)",
+      "requirements": [
+        {
+          "count": 1,
+          "description": "calories",
+          "possession": "calories"
+        }
+      ],
+      "rewards": [
+        {
+          "count": 2,
+          "description": "calories",
+          "possession": "calories"
+        }
+      ]
+    },
+    {
+      "costs": [],
+      "id": 3,
+      "name": "Bribe the SUNA Inspectors (total peace)",
+      "requirements": [],
+      "rewards": [
+        {
+          "count": 1,
+          "description": "ignore bad food",
+          "possession": "ignore bad food"
+        }
+      ]
+    },
+    {
+      "costs": [],
+      "id": 4,
+      "name": "Activate Digestor Implant (eat even the toxic stuff)",
+      "requirements": [
+        {
+          "count": 1,
+          "description": "digester implant",
+          "possession": "digester implant"
+        }
+      ],
+      "rewards": [
+        {
+          "count": 1,
+          "description": "ignore bad food",
+          "possession": "ignore bad food"
+        }
+      ]
+    }
+  ],
+  "description": "Chacao ex-subway tunnels, 2099. Cyber hunger is killing you. The black market sells synthetic arepas made with hacked flour from Colombia and mutant soy from Guri. without a cybernetic stomach.",
+  "id": 2,
+  "name": "Synthetic Arepas Black Market",
+  "texture": "res://assets/scenes/synthetic_arepa_black_market.jpg"
+}

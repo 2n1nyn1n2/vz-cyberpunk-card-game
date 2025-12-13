@@ -1,0 +1,44 @@
+[
+  {
+    "active": true,
+    "description": "A brewer's vat has stalled fermentation due to contaminated water, halting production of vital rations. Yeast is key to kickstarting it, but sourcing clean inputs is tricky.Spatula could stir and aerate, or flashlight reveal hidden contaminants.",
+    "json": "res://data/challenges/abandoned_mine_shaft.json",
+    "name": "abandoned_mine_shaft",
+    "texture": "res://assets/challenges/abandoned_mine_shaft.jpg"
+  },
+  {
+    "active": true,
+    "description": "A brewer's vat has stalled fermentation due to contaminated water, halting production of vital rations. Yeast is key to kickstarting it, but sourcing clean inputs is tricky.Spatula could stir and aerate, or flashlight reveal hidden contaminants.",
+    "json": "res://data/challenges/fermentation_fiasco.json",
+    "name": "fermentation_fiasco",
+    "texture": "res://assets/challenges/fermentation_fiasco.jpg"
+  },
+  {
+    "active": true,
+    "description": "A village bakery is overrun by nocturnal pests during the night shift, ruining dough batches. You need yeast to restart production, but the pests guard the storage. A flashlight could illuminate and scare them, or raw meat could bait a trap.",
+    "json": "res://data/challenges/midnight_bakery_dilemma.json",
+    "name": "midnight_bakery_dilemma",
+    "texture": "res://assets/challenges/midnight_bakery_dilemma.jpg"
+  },
+  {
+    "active": true,
+    "description": "The sleeping quarters for miners are infested with fatigue-inducing fumes from poor ventilation. Resting here restores energy but requires fixing the issue. A foreman could organize repairs, or trading rocks might buy better air filters.",
+    "json": "res://data/challenges/overworked_crew_quarters.json",
+    "name": "overworked_crew_quarters",
+    "texture": "res://assets/challenges/overworked_crew_quarters.jpg"
+  },
+  {
+    "active": true,
+    "description": "Chacao ex-subway tunnels, 2099. Cyber hunger is killing you. The black market sells synthetic arepas made with hacked flour from Colombia and mutant soy from Guri. without a cybernetic stomach.",
+    "json": "res://data/challenges/synthetic_arepa_black_market.json",
+    "name": "synthetic_arepa_black_market",
+    "texture": "res://assets/challenges/synthetic_arepa_black_market.jpg"
+  },
+  {
+    "active": true,
+    "description": "In the shadows of Caracas 2099, your forged ID flickers under corporate scanners. Fix it fast or face the black market thugs. Use bribes, hacks, or contacts to legitimize your alias and continue on your 'criolla' odyssey.",
+    "json": "res://data/challenges/without_papers.json",
+    "name": "without_papers",
+    "texture": "res://assets/challenges/without_papers.jpg"
+  }
+]

@@ -1,0 +1,135 @@
+[
+  {
+    "active": true,
+    "description": "Cooks for the mine.",
+    "desired_possessions": { "foreman": 1, "spatula": 1, "yeast": 1 },
+    "goal": "Find a spatula, Find yeast, Poison the foreman",
+    "name": "the_chef",
+    "starting_possessions": { "money": 5 },
+    "texture": "res://assets/players/the_chef.jpg"
+  },
+  {
+    "active": true,
+    "description": "Digs a tunnel under the fence to escape",
+    "desired_possessions": { "flashlight": 1, "night shift": 1, "pickaxe": 1 },
+    "goal": "Find a pickaxe, Find a flashlight, Find time to dig",
+    "name": "the_miner",
+    "starting_possessions": { "money": 5 },
+    "texture": "res://assets/players/the_miner.jpg"
+  },
+  {
+    "active": true,
+    "description": "Went out through the jungle with his tiger, found his father is a mayor",
+    "desired_possessions": { "foreman": 1, "night shift": 1, "raw meat": 1 },
+    "goal": "Train the tiger, Feed the tiger, Convince the boss to keep the tiger",
+    "name": "the_minor",
+    "starting_possessions": { "money": 5 },
+    "texture": "res://assets/players/the_minor.jpg"
+  },
+  {
+    "active": true,
+    "description": "Escapes because the foreman thinks there is only one monkey girl",
+    "desired_possessions": { "barracks": 1, "foreman": 1, "night shift": 1 },
+    "goal": "Find the foreman, convince the foreman you are sleeping, escape",
+    "name": "the_monkey_twins_001",
+    "starting_possessions": { "money": 5 },
+    "texture": "res://assets/players/the_monkey_twins_001.jpg"
+  },
+  {
+    "active": true,
+    "description": "Stays behind because the foreman thinks there is only one monkey girl",
+    "desired_possessions": { "barracks": 1, "day shift": 1, "foreman": 1 },
+    "goal": "Find the foreman, convince the foreman you are sleeping, stay",
+    "name": "the_monkey_twins_002",
+    "starting_possessions": { "money": 5 },
+    "texture": "res://assets/players/the_monkey_twins_002.jpg"
+  },
+  {
+    "active": true,
+    "description": "Manipulates the mind of a foreman to escape",
+    "desired_possessions": { "day shift": 1, "foreman": 1, "red jasper": 1 },
+    "goal": "Find red jasper, Find the foreman, Convince the foreman she is bad luck",
+    "name": "the_superstitious",
+    "starting_possessions": { "money": 5 },
+    "texture": "res://assets/players/the_superstitious.jpg"
+  },
+  {
+    "active": true,
+    "description": "",
+    "desired_possessions": { "calories": 1 },
+    "goal": "",
+    "name": "neighborhood_contact",
+    "starting_possessions": { "money": 5 },
+    "texture": "res://assets/players/neighborhood_contact.jpg"
+  },
+  {
+    "active": true,
+    "description": "",
+    "desired_possessions": { "calories": 1 },
+    "goal": "",
+    "name": "drone_hacker",
+    "starting_possessions": { "money": 5 },
+    "texture": "res://assets/players/drone_hacker.jpg"
+  },
+  {
+    "active": true,
+    "description": "",
+    "desired_possessions": { "calories": 1 },
+    "goal": "",
+    "name": "mini_cybernetic_connector",
+    "starting_possessions": { "money": 5 },
+    "texture": "res://assets/players/mini_cybernetic_connector.jpg"
+  },
+  {
+    "active": true,
+    "description": "",
+    "desired_possessions": { "money": 10 },
+    "goal": "",
+    "name": "group_bribe",
+    "starting_possessions": { "money": 5 },
+    "texture": "res://assets/players/group_bribe.jpg"
+  },
+  {
+    "active": true,
+    "description": "",
+    "desired_possessions": {
+      "identity papers": 1,
+      "ignore bad food": 1,
+      "money": 1
+    },
+    "goal": "",
+    "name": "beggar",
+    "starting_possessions": { "money": 0, "night shift": 1 },
+    "texture": "res://assets/players/beggar.jpg"
+  },
+  {
+    "active": true,
+    "description": "",
+    "desired_possessions": {
+      "blue jasper": 1,
+      "clear path to escape": 1,
+      "green jasper": 1,
+      "raw ores": 1,
+      "ticket to brazil": 1,
+      "yellow jasper": 1
+    },
+    "goal": "",
+    "name": "scavenger",
+    "starting_possessions": { "money": 5 },
+    "texture": "res://assets/players/scavenger.jpg"
+  },
+  {
+    "active": true,
+    "description": "",
+    "desired_possessions": {
+      "blue jasper": 1,
+      "green jasper": 1,
+      "raw ores": 1,
+      "yellow jasper": 1
+    },
+    "goal": "",
+    "name": "exchange_owner",
+    "starting_possessions": { "money": 5 },
+    "texture": "res://assets/players/exchange_owner.jpg"
+  }
+]

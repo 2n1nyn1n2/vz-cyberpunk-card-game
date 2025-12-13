@@ -1,0 +1,71 @@
+[gd_scene load_steps=4 format=3 uid="uid://cjcl0ed4dmjod"]
+
+[ext_resource type="Script" uid="uid://254wfr0nnnxv" path="res://scripts/SceneSelection.gd" id="1_tmd3s"]
+[ext_resource type="PackedScene" uid="uid://cuh31n1vt2cb7" path="res://tscns/Background.tscn" id="2_hhvh6"]
+[ext_resource type="Script" uid="uid://bakguwt464ofm" path="res://scripts/Possession.gd" id="3_1dh3a"]
+
+[node name="SceneSelection" type="Node"]
+script = ExtResource("1_tmd3s")
+
+[node name="Background" parent="." instance=ExtResource("2_hhvh6")]
+
+[node name="SelectSceneContainer" type="PanelContainer" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 1792.0
+offset_bottom = 2048.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="SelectScene" type="Button" parent="SelectSceneContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 96
+disabled = true
+text = "Choose This Scene
+"
+
+[node name="ScrollHandLeftContainer" type="PanelContainer" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 1536.0
+offset_right = -1024.0
+offset_bottom = 1792.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="ScrollHandLeft" type="Button" parent="ScrollHandLeftContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 96
+disabled = true
+text = "< LEFT <"
+
+[node name="ScrollHandRightContainer" type="PanelContainer" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 1024.0
+offset_top = 1536.0
+offset_bottom = 1792.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="ScrollHandRight" type="Button" parent="ScrollHandRightContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 96
+disabled = true
+text = "> RIGHT >"
+
+[node name="Possessions" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 1280.0
+offset_bottom = 1280.0
+script = ExtResource("3_1dh3a")
+
+[node name="Hand" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 384.0
+offset_bottom = 384.0

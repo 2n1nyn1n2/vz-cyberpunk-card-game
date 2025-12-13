@@ -1,0 +1,69 @@
+[gd_scene load_steps=3 format=3 uid="uid://dlxpi5sht0di6"]
+
+[ext_resource type="Script" uid="uid://c4wn2k73jl63d" path="res://scripts/Scene.gd" id="1_tp643"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_p0vlq"]
+
+[node name="Scene" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_tp643")
+
+[node name="Background" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(512, 800)
+layout_mode = 1
+offset_right = 512.0
+offset_bottom = 800.0
+mouse_filter = 1
+
+[node name="SceneImage" type="TextureRect" parent="."]
+clip_contents = true
+layout_mode = 0
+offset_left = 64.0
+offset_top = 188.0
+offset_right = 448.0
+offset_bottom = 768.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = SubResource("CompressedTexture2D_p0vlq")
+expand_mode = 1
+
+[node name="SceneName" type="Label" parent="."]
+layout_mode = 0
+offset_left = 16.0
+offset_right = 496.0
+offset_bottom = 32.0
+mouse_filter = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Scene Name"
+
+[node name="SceneDescription" type="Label" parent="."]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 32.0
+offset_right = 496.0
+offset_bottom = 160.0
+mouse_filter = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Scene Description"
+autowrap_mode = 2
+
+[node name="ColorRectLL" type="ColorRect" parent="."]
+visible = false
+layout_mode = 0
+offset_top = 768.0
+offset_right = 64.0
+offset_bottom = 800.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRectLR" type="ColorRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 448.0
+offset_top = 768.0
+offset_right = 512.0
+offset_bottom = 800.0
+color = Color(0, 0, 0, 1)
+
+[connection signal="mouse_entered" from="." to="." method="_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_mouse_exited"]

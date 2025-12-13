@@ -1,0 +1,64 @@
+[gd_scene load_steps=3 format=3 uid="uid://cuh31n1vt2cb7"]
+
+[ext_resource type="Script" uid="uid://cloato07fdxo5" path="res://scripts/Background.gd" id="1_dvpi0"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dvpi0"]
+
+[node name="Background" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dvpi0")
+
+[node name="BackgroundImage" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = SubResource("CompressedTexture2D_dvpi0")
+expand_mode = 2
+stretch_mode = 6
+
+[node name="BackgroundNameContainer" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 132.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="BackgroundName" type="Label" parent="BackgroundNameContainer"]
+custom_minimum_size = Vector2(2048, 0)
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 96
+text = "Background Name"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="BackgroundDescContainer" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 128.0
+offset_bottom = 384.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="BackgroundDesc" type="Label" parent="BackgroundDescContainer"]
+custom_minimum_size = Vector2(2048, 0)
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 64
+text = "Background Description"
+horizontal_alignment = 1
+autowrap_mode = 3

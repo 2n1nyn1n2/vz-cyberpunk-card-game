@@ -1,0 +1,54 @@
+{
+  "scene_selection": [
+    {
+      "active": true,
+      "description": "Choose your scene",
+      "name": "Scene Selection",
+      "texture": "res://assets/scenes/starting-locations.jpg"
+    }
+  ],
+  "starting_location": [
+    {
+      "active": true,
+      "challenges": ["abandoned_mine_shaft"],
+      "description": "You've stumbled upon an old mine shaft blocked by unstable debris. Rumors say it holds valuable ores, but getting inside requires clever resource management or brute force. The foreman from your possessions could oversee a safe dig, or a pickaxe could break through directly.",
+      "name": "abandoned_mine_shaft",
+      "texture": "res://assets/scenes/abandoned_mine_shaft.jpg"
+    },
+    {
+      "active": true,
+      "challenges": ["fermentation_fiasco"],
+      "description": "A brewer's vat has stalled fermentation due to contaminated water, halting production of vital rations. Yeast is key to kickstarting it, but sourcing clean inputs is tricky.Spatula could stir and aerate, or flashlight reveal hidden contaminants.",
+      "name": "fermentation_fiasco",
+      "texture": "res://assets/scenes/fermentation_fiasco.jpg"
+    },
+    {
+      "active": true,
+      "challenges": ["midnight_bakery_dilemma"],
+      "description": "A village bakery is overrun by nocturnal pests during the night shift, ruining dough batches. You need yeast to restart production, but the pests guard the storage. A flashlight could illuminate and scare them, or raw meat could bait a trap.",
+      "name": "midnight_bakery_dilemma",
+      "texture": "res://assets/scenes/midnight_bakery_dilemma.jpg"
+    },
+    {
+      "active": true,
+      "challenges": ["overworked_crew_quarters"],
+      "description": "The sleeping quarters for miners are infested with fatigue-inducing fumes from poor ventilation. Resting here restores energy but requires fixing the issue. A foreman could organize repairs, or trading rocks might buy better air filters.",
+      "name": "overworked_crew_quarters",
+      "texture": "res://assets/scenes/overworked_crew_quarters.jpg"
+    },
+    {
+      "active": true,
+      "challenges": ["synthetic_arepa_black_market"],
+      "description": "Chacao ex-subway tunnels, 2099. Cyber hunger is killing you. The black market sells synthetic arepas made with hacked flour from Colombia and mutant soy from Guri. without a cybernetic stomach.",
+      "name": "synthetic_arepa_black_market",
+      "texture": "res://assets/scenes/synthetic_arepa_black_market.jpg"
+    },
+    {
+      "active": true,
+      "challenges": ["without_papers"],
+      "description": "In the shadows of Caracas 2099, your forged ID flickers under corporate scanners. Fix it fast or face the black market thugs. Use bribes, hacks, or contacts to legitimize your alias and continue on your 'criolla' odyssey.",
+      "name": "without_papers",
+      "texture": "res://assets/scenes/without_papers.jpg"
+    }
+  ]
+}

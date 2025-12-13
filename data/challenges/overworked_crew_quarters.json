@@ -1,0 +1,166 @@
+{
+  "choices": [
+    {
+      "costs": [
+        {
+          "count": 12,
+          "possession": "money"
+        }
+      ],
+      "id": 1,
+      "name": "Pay for ventilation upgrades",
+      "requirements": [],
+      "rewards": [
+        {
+          "count": 1,
+          "description": "from grateful workers",
+          "possession": "green jasper"
+        }
+      ]
+    },
+    {
+      "costs": [
+        {
+          "count": 10,
+          "possession": "money"
+        }
+      ],
+      "id": 2,
+      "name": "Pay for ventilation upgrades - day shift",
+      "requirements": [
+        {
+          "count": 1,
+          "possession": "day shift"
+        }
+      ],
+      "rewards": [
+        {
+          "count": 1,
+          "description": "from grateful workers",
+          "possession": "green jasper"
+        }
+      ]
+    },
+    {
+      "costs": [
+        {
+          "count": 1,
+          "possession": "red jasper"
+        }
+      ],
+      "id": 3,
+      "name": "Trade red jasper for air purifiers",
+      "requirements": [],
+      "rewards": [
+        {
+          "count": 1,
+          "description": "day shift has energy now",
+          "possession": "day shift"
+        },
+        {
+          "count": 1,
+          "description": "night shift has energy now",
+          "possession": "night shift"
+        }
+      ]
+    },
+    {
+      "costs": [],
+      "id": 4,
+      "name": "Assign foreman to lead cleanup",
+      "requirements": [
+        {
+          "count": 1,
+          "possession": "foreman"
+        }
+      ],
+      "rewards": [
+        {
+          "count": 8,
+          "description": "Upgraded quarters, crew productivity boost",
+          "possession": "money"
+        }
+      ]
+    },
+    {
+      "costs": [],
+      "id": 5,
+      "name": "Use pickaxe to vent the fumes manually",
+      "requirements": [
+        {
+          "count": 1,
+          "possession": "pickaxe"
+        }
+      ],
+      "rewards": [
+        {
+          "count": 1,
+          "description": "scavenged supplies",
+          "possession": "raw meat"
+        }
+      ]
+    },
+    {
+      "costs": [],
+      "id": 5,
+      "name": "Sleep elsewhere",
+      "requirements": [],
+      "rewards": []
+    },
+    {
+      "costs": [],
+      "id": 6,
+      "name": "Find the barracks",
+      "requirements": [
+        {
+          "count": 1,
+          "possession": "no barracks"
+        }
+      ],
+      "rewards": [
+        {
+          "count": 1,
+          "possession": "barracks"
+        }
+      ]
+    },
+    {
+      "costs": [],
+      "id": 6,
+      "name": "Find a flashlight",
+      "requirements": [
+        {
+          "count": 1,
+          "possession": "no flashlight"
+        }
+      ],
+      "rewards": [
+        {
+          "count": 1,
+          "possession": "flashlight"
+        }
+      ]
+    },
+    {
+      "costs": [],
+      "id": 6,
+      "name": "Find a pickaxe",
+      "requirements": [
+        {
+          "count": 1,
+          "possession": "no pickaxe"
+        }
+      ],
+      "rewards": [
+        {
+          "count": 1,
+          "possession": "pickaxe"
+        }
+      ]
+    }
+  ],
+  "description": "The sleeping quarters for miners are infested with fatigue-inducing fumes from poor ventilation. Resting here restores energy but requires fixing the issue. A foreman could organize repairs, or trading rocks might buy better air filters.",
+  "id": 0,
+  "name": "The Overworked Crew Quarters",
+  "texture": "res://assets/scenes/overworked_crew_quarters.jpg"
+}

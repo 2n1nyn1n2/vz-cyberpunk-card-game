@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbqcv14i0kyib"]
+
+[ext_resource type="Script" uid="uid://bf7ypmjafio5q" path="res://scripts/Character.gd" id="1"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_p0vlq"]
+
+[node name="Character" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1")
+
+[node name="Background" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(512, 800)
+layout_mode = 1
+offset_right = 512.0
+offset_bottom = 800.0
+mouse_filter = 1
+
+[node name="CharacterImage" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 96.0
+offset_right = 486.0
+offset_bottom = 784.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = SubResource("CompressedTexture2D_p0vlq")
+stretch_mode = 5
+
+[node name="CharacterName" type="Label" parent="."]
+layout_mode = 0
+offset_left = 16.0
+offset_right = 496.0
+offset_bottom = 32.0
+mouse_filter = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Character Name"
+
+[node name="CharacterDescription" type="Label" parent="."]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 32.0
+offset_right = 496.0
+offset_bottom = 96.0
+mouse_filter = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Character Description"
+autowrap_mode = 2
+
+[connection signal="mouse_entered" from="." to="." method="_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_mouse_exited"]

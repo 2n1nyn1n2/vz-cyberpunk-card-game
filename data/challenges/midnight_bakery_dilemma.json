@@ -1,0 +1,138 @@
+{
+  "choices": [
+    {
+      "costs": [
+        {
+          "count": 7,
+          "possession": "money"
+        }
+      ],
+      "id": 1,
+      "name": "Offer $7 for fresh yeast from a rival baker",
+      "requirements": [],
+      "rewards": [
+        {
+          "count": 2,
+          "possession": "yeast"
+        }
+      ]
+    },
+    {
+      "costs": [
+        {
+          "count": 3.5,
+          "possession": "money"
+        }
+      ],
+      "id": 2,
+      "name": "Offer $7 for fresh yeast from a rival baker (with spatula)",
+      "requirements": [
+        {
+          "count": 1,
+          "possession": "spatula"
+        }
+      ],
+      "rewards": [
+        {
+          "count": 2,
+          "possession": "yeast"
+        }
+      ]
+    },
+    {
+      "costs": [
+        {
+          "count": 1,
+          "possession": "raw meat"
+        }
+      ],
+      "id": 3,
+      "name": "Set a meat trap for pests",
+      "requirements": [],
+      "rewards": [
+        {
+          "count": 1,
+          "possession": "yeast"
+        },
+        {
+          "count": 2,
+          "description": "from pest pelts",
+          "possession": "money"
+        }
+      ]
+    },
+    {
+      "costs": [],
+      "id": 4,
+      "name": "Illuminate with flashlight to drive them out",
+      "requirements": [
+        {
+          "count": 1,
+          "possession": "flashlight"
+        }
+      ],
+      "rewards": [
+        {
+          "count": 3,
+          "possession": "yeast"
+        }
+      ]
+    },
+    {
+      "costs": [],
+      "id": 5,
+      "name": "Work the night shift yourself",
+      "requirements": [
+        {
+          "count": 1,
+          "possession": "night shift"
+        }
+      ],
+      "rewards": [
+        {
+          "count": 10,
+          "description": "restored bakery and sold baked goods",
+          "possession": "money"
+        }
+      ]
+    },
+    {
+      "costs": [
+        {
+          "count": 5,
+          "possession": "money"
+        }
+      ],
+      "id": 6,
+      "name": "Steal yeast under cover of dark",
+      "requirements": [],
+      "rewards": [
+        {
+          "count": 1,
+          "possession": "yeast"
+        }
+      ]
+    },
+    {
+      "costs": [],
+      "id": 7,
+      "name": "Steal spatula under cover of dark",
+      "requirements": [
+        {
+          "count": 1,
+          "possession": "no spatula"
+        }
+      ],
+      "rewards": [
+        {
+          "count": 1,
+          "possession": "spatula"
+        }
+      ]
+    }
+  ],
+  "description": "A village bakery is overrun by nocturnal pests during the night shift, ruining dough batches. You need yeast to restart production, but the pests guard the storage. A flashlight could illuminate and scare them, or raw meat could bait a trap.",
+  "id": 2,
+  "name": "The Midnight Bakery Dilemma",
+  "texture": "res://assets/scenes/midnight_bakery_dilemma.jpg"
+}

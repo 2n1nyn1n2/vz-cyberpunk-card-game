@@ -1,0 +1,35 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="vz-cyberpunk-card-game"
+run/main_scene="uid://cjcl0ed4dmjod"
+config/features=PackedStringArray("4.5", "GL Compatibility")
+boot_splash/image="uid://bejsfkn3pigxp"
+config/icon="uid://d1qy1cj78tc7f"
+
+[autoload]
+
+ActiveRecords="*res://scripts/ActiveRecords.gd"
+TransferToScene="*res://scripts/TransferToScene.gd"
+
+[display]
+
+window/size/viewport_width=2048
+window/size/viewport_height=2048
+window/size/borderless=true
+window/stretch/mode="canvas_items"
+window/handheld/orientation=6
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
